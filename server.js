@@ -70,10 +70,10 @@ app.get('/', function (req, res) {
       if (err) {
         console.log('Error running count. Message:\n'+err);
       }
-      res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails });
+      res.end('Hello from Node.js! ' + now.toJSON() + ' on ' + process.env.HOSTNAME  + '\n');
     });
   } else {
-    res.render('index.html', { pageCountMessage : null});
+    res.end('Hello from Node.js! ' + now.toJSON() + ' on ' + process.env.HOSTNAME  + '\n');
   }
 });
 

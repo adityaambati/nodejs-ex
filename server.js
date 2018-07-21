@@ -71,11 +71,11 @@ app.get('/', function (req, res) {
         console.log('Error running count. Message:\n'+err);
       }
       var now = new Date();
-      res.end('Hello from Node.js! ' + now.toJSON() + ' on ' + process.env.HOSTNAME  + '\n');
+      res.end('Hello from 2 from Node.js! ' + now.toJSON() + ' on ' + process.env.HOSTNAME  + '\n');
     });
   } else {
       var now = new Date();
-    res.end('Hello from Node.js! ' + now.toJSON() + ' on ' + process.env.HOSTNAME  + '\n');
+    res.end('Hello from  2 Node.js! ' + now.toJSON() + ' on ' + process.env.HOSTNAME  + '\n');
   }
 });
 

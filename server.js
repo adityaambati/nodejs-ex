@@ -74,6 +74,7 @@ app.get('/', function (req, res) {
       res.end('Hello from Node.js! ' + now.toJSON() + ' on ' + process.env.HOSTNAME  + '\n');
     });
   } else {
+      var now = new Date();
     res.end('Hello from Node.js! ' + now.toJSON() + ' on ' + process.env.HOSTNAME  + '\n');
   }
 });
